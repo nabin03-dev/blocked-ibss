@@ -23,13 +23,7 @@ const BlockedSite = () => {
         {/* Blocked Notice Section */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
-            <div className="relative">
-              <img 
-                src={blockedIcon} 
-                alt="Site Blocked" 
-                className="w-24 h-24 object-contain mr-4 rounded-xl shadow-lg"
-              />
-            </div>
+         
             <div className="flex flex-col items-center">
               <Shield className="w-24 h-24 text-blocked-red mb-2 drop-shadow-lg animate-pulse" />
             </div>
