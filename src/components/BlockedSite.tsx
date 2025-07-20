@@ -2,24 +2,36 @@ import { AlertTriangle, Shield, Phone, Mail, Clock, FileText } from "lucide-reac
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import blockedIcon from "@/assets/blocked-icon.jpg";
+import ibssLogo from "@/assets/ibss-logo.png";
 
 const BlockedSite = () => {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-3xl animate-fade-in">
-        {/* Header with Prominent Logo */}
+        {/* ISP Branding Header */}
+        <div className="text-center mb-8">
+          <div className="flex justify-center mb-6">
+            <img 
+              src={ibssLogo} 
+              alt="IBSS Nepal" 
+              className="h-20 w-auto object-contain drop-shadow-lg"
+            />
+          </div>
+          <div className="w-24 h-1 bg-brand-primary mx-auto rounded-full"></div>
+        </div>
+
+        {/* Blocked Notice Section */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
             <div className="relative">
               <img 
                 src={blockedIcon} 
-                alt="ISP Logo" 
-                className="w-32 h-32 object-contain mr-6 animate-logo-glow rounded-xl shadow-2xl"
+                alt="Site Blocked" 
+                className="w-24 h-24 object-contain mr-4 rounded-xl shadow-lg"
               />
             </div>
             <div className="flex flex-col items-center">
-              <Shield className="w-20 h-20 text-blocked-red mb-2 drop-shadow-lg" />
-              <div className="w-16 h-1 bg-brand-primary rounded-full"></div>
+              <Shield className="w-24 h-24 text-blocked-red mb-2 drop-shadow-lg animate-pulse" />
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
@@ -101,11 +113,11 @@ const BlockedSite = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Phone className="w-5 h-5 text-brand-primary" />
-                  <span className="font-medium">Hotline: +977-1-XXXXXXX</span>
+                  <span className="font-medium">Hotline: +977-1-5970000</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-5 h-5 text-brand-primary" />
-                  <span className="font-medium">support@yourisp.com.np</span>
+                  <span className="font-medium">support@ibssnepal.com.np</span>
                 </div>
               </div>
               <div className="text-sm text-muted-foreground">
@@ -138,13 +150,13 @@ const BlockedSite = () => {
         <div className="text-center pt-8 border-t border-brand-primary/20">
           <div className="mb-4">
             <img 
-              src={blockedIcon} 
-              alt="ISP Logo Small" 
-              className="w-12 h-12 object-contain mx-auto opacity-60"
+              src={ibssLogo} 
+              alt="IBSS Nepal" 
+              className="h-8 w-auto object-contain mx-auto opacity-60"
             />
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Your ISP Name • Licensed & Regulated by Nepal Telecommunications Authority (NTA)
+            © {new Date().getFullYear()} IBSS Nepal • Licensed & Regulated by Nepal Telecommunications Authority (NTA)
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             Compliance ID: NTA-2024-{Math.random().toString(36).substr(2, 6).toUpperCase()}
