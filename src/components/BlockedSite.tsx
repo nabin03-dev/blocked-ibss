@@ -1,7 +1,6 @@
 import { AlertTriangle, Shield, Phone, Mail, Clock, FileText } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import blockedIcon from "@/assets/blocked-icon.jpg";
 import ibssLogo from "@/assets/ibss-logo.png";
 
 const BlockedSite = () => {
@@ -107,7 +106,7 @@ const BlockedSite = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Phone className="w-5 h-5 text-brand-primary" />
-                  <span className="font-medium">Hotline: +977-1-5970000</span>
+                  <span className="font-medium">Hotline: +977-1-4581078</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <Mail className="w-5 h-5 text-brand-primary" />
@@ -153,7 +152,7 @@ const BlockedSite = () => {
             © {new Date().getFullYear()} IBSS Nepal Internet
           </p>
           <p className="text-xs text-muted-foreground mt-2">
-            Compliance ID: NTA-2024-{Math.random().toString(36).substr(2, 6).toUpperCase()}
+    
           </p>
         </div>
       </div>
