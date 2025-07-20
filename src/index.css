@@ -9,35 +9,39 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 248 250 252;
-    --foreground: 220 26% 14%;
+    --foreground: 30 41 59;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 26% 14%;
+    --card-foreground: 30 41 59;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 26% 14%;
+    --popover-foreground: 30 41 59;
 
-    --primary: 220 100% 50%;
+    --primary: 213 94% 68%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 26% 14%;
+    --secondary: 213 27% 84%;
+    --secondary-foreground: 30 41 59;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 8% 46%;
+    --muted: 213 27% 84%;
+    --muted-foreground: 100 7% 23%;
 
-    --accent: 220 14% 96%;
-    --accent-foreground: 220 26% 14%;
+    --accent: 213 27% 84%;
+    --accent-foreground: 30 41 59;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Custom tokens for blocked page */
+    /* ISP Brand Colors - Professional telecom palette */
+    --brand-primary: 213 94% 68%;
+    --brand-secondary: 220 70% 50%;
+    --brand-accent: 16 100% 66%;
     --blocked-red: 0 84% 60%;
     --blocked-red-bg: 0 84% 97%;
-    --blocked-blue: 220 100% 50%;
-    --authority-gray: 220 8% 46%;
+    --blocked-blue: 213 94% 68%;
+    --authority-gray: 100 7% 23%;
     --warning-border: 0 84% 85%;
+    --logo-shadow: 213 94% 68% / 0.3;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
