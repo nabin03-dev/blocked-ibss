@@ -150,7 +150,7 @@ const BlockedSite = () => {
             />
           </div>
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} IBSS Nepal • Licensed & Regulated by Nepal Telecommunications Authority (NTA)
+            © {new Date().getFullYear()} IBSS Nepal Internet
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             Compliance ID: NTA-2024-{Math.random().toString(36).substr(2, 6).toUpperCase()}
